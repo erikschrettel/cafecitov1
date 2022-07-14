@@ -33,17 +33,17 @@
 
 /*Header*/
 
-.header-container {
+/* .hero-container {
     position:sticky;
     top: 0%;
     z-index: 9999;
-}
+} */
 
 .header {
 background-color: var(--white);
 margin: 0 auto;
-max-width: 1400px;
 height: 100px;
+max-width: 1400px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -171,12 +171,12 @@ box-shadow: 0 0.1px;
     margin: 0 auto;
 position: relative;
 width: 100%;
-height: calc(100vh - 100px);
+height: 95vh;
 background: #f5f5f5;
 background-size: cover;
 background-position: auto;
 transition: all .1s ease-in-out;
-background-image: url('/assets/imgs/banner2.jpg');
+background-image: url('/assets/imgs/pexels-chevanon-photography-302899.jpg');
 animation: hero 20s infinite linear;
 }
 
@@ -184,7 +184,7 @@ animation: hero 20s infinite linear;
     width: 100%;
     height: 100%;
     color: var(--white);
-    background-color: rgba(1, 30, 50, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,22 +207,22 @@ transition: all 0.3s ease-in-out;
 }
 
 .hero-background a:hover{
-    background-color: #FFF;
+    background-color: var(--notanclaro);
     color: #333;
 }
 
 @keyframes hero{
     0% {
-        background-image: url(/assets/imgs/banner2.jpg);
+        background-image: url(/assets/imgs/abstract-blur-coffee-shop-cafe-interior_74190-6342.jpg);
     }
     25% {
-        background-image: url(/assets/imgs/banner2.jpg);
+        background-image: url(/assets/imgs/abstract-blur-coffee-shop-cafe-interior_74190-6342.jpg);
     }
     26% {
-        background-image: url(/assets/imgs/banner1.jpg);
+        background-image: url(/assets/imgs/pexels-chevanon-photography-302899.jpg);
     }
     50% {
-        background-image: url(/assets/imgs/banner1.jpg);
+        background-image: url(/assets/imgs/pexels-chevanon-photography-302899.jpg);
     }
     51% {
         background-image: url(/assets/imgs/banner3.jpg)
@@ -237,3 +237,88 @@ transition: all 0.3s ease-in-out;
         background-image: url(/assets/imgs/Coffee-shop.jpg);
     }
 }
+
+/* First Article */
+
+.article__us {
+    max-width: 1400px;
+    margin: 0 auto;
+padding: 70px 0;
+gap: 100px;
+width: 100%;
+height: 50vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+ #about-us {
+gap: 20px;
+} 
+
+.article__content{
+    height: 250px;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border-radius: 5px;
+    box-shadow: -20px 10px 60px 5px rgb(229, 229, 229);
+}
+
+.article__img {
+background-image: url(/assets/imgs/photo-1595441721716-67792383506e.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 250px;
+width: 100%;
+border-radius: 5px;
+flex-wrap: wrap;
+}
+
+.article__texts {
+    padding: 0 20px;
+}
+
+.article__texts h2 {
+color: var(--green)
+}
+
+.article__texts h3 {
+    color: var(--brown)
+}
+
+@media (max-width:768px) {
+
+    .article__content {
+        padding: 20px 0;
+        max-width: 768px;
+        height: 350px;
+        
+    }
+    #about-us {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .article__img {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.article__waves {
+        background-color: var(--white);
+        max-width: 1400px;
+        margin: 0 auto;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
