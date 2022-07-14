@@ -276,7 +276,6 @@ background-size: cover;
 height: 250px;
 width: 100%;
 border-radius: 5px;
-flex-wrap: wrap;
 }
 
 .article__texts {
@@ -294,10 +293,9 @@ color: var(--green)
 @media (max-width:768px) {
 
     .article__content {
-        padding: 20px 0;
-        max-width: 768px;
+        padding: 10px 0;
         height: 350px;
-        
+        box-shadow: none;
     }
     #about-us {
         display: flex;
@@ -305,10 +303,14 @@ color: var(--green)
     }
     
     .article__img {
+        background-image: url(/assets/imgs/photo-1595441721716-67792383506e.jpg);
         height: 100%;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
+        width: 90%;        
+        border-radius: 5px;
+    }
+
+    .article__texts {
+        text-align: center;
     }
 }
 
