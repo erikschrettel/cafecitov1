@@ -19,11 +19,11 @@
         <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
         <input type="checkbox" id="toggle-menu">
         <ul class="navbar-list">
-            <li class="nav-li"><a href="#">INICIO</a></li>
-            <li class="nav-li"><a href="#">NOSOTROS</a></li>
-            <li class="nav-li"><a href="#">CONTACTO</a></li>
-            <li class="other-li"><a href="#">INICIAR SESION</a></li>
-            <li class="other-li"><a href="#">Registrarse</a></li>
+            <li class="nav-li"><a href="/index.html">Inicio</a></li>
+            <li class="nav-li"><a href="#products">Productos</a></li>
+            <li class="nav-li"><a href="#contacto">Contacto</a></li>
+            <li class="other-li"><a href="/iniciosesion/inicio.html">Iniciar sesion</a></li>
+            <li class="other-li"><a href="/register/register.html">Registrarse</a></li>
         </ul>
     </nav>
     </header>
@@ -48,6 +48,145 @@
         </article>
     </article>
 
- <div class="article__waves" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #5c3c2f;"></path></svg></div>
+ <div class="article__waves" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #c4d7a1;"></path></svg></div>
+
+ <!-- Products -->
+<h2 class="anuncio">¡Nuevos productos!</h2> 
+<section class="section__products" id="products">
+    <div class="container__products">
+    
+    <div class="cards">
+       <div class="img-firstproduct">
+           <img src="/assets/imgs/skinnyvainillalatte.png" alt="">
+       </div>
+       <div class="container">
+        <h3>Skinny Vainilla Latte</h3>
+        <p>Café espresso con leche descremada al vapor y toques de vainilla sin azúcar.</p>
+        <a href="#">Leer más</a>
+       </div>
+    </div>
+    <div class="cards">
+        <div class="img-secondproduct">
+            <img src="/assets/imgs/latteddl.png" alt="">
+        </div>
+        <div class="container">
+         <h3>Dulce de Leche Latte</h3>
+         <p>Café espresso con dulce de leche, leche al vapor con crema batida y salsa de caramelo.</p>
+         <a href="#">Leer más</a>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="img-thirdproduct">
+            <img src="/assets/imgs/lattemacchiato.png" alt="">
+        </div>
+        <div class="container">
+         <h3>Late Macchiato</h3>
+         <p>Leche vaporizada con café espresso que finaliza con un punto en la superficie.</p>
+         <a href="#">Leer más</a>
+        </div>
+    </div>
+    </div>
+ </section>
+
+ <h2 class="anuncio">¡Tus clásicos!</h2>
+
+ <section class="section__products">
+    <div class="container__products">
+    
+    <div class="cards">
+       <div class="img-firstproduct">
+           <img src="/assets/imgs/americano.png" alt="">
+       </div>
+       <div class="container">
+        <h3>Americano</h3>
+        <p>Café espresso combinado con agua al mejor estilo americano.</p>
+        <a href="#">Leer más</a>
+       </div>
+    </div>
+    <div class="cards">
+        <div class="img-secondproduct">
+            <img src="/assets/imgs/capuchino.png" alt="">
+        </div>
+        <div class="container">
+         <h3>Capuccino</h3>
+         <p>Café espresso, leche vaporizada y abundante espuma de leche.</p>
+         <a href="#">Leer más</a>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="img-thirdproduct">
+            <img src="/assets/imgs/moca.png" alt="">
+        </div>
+        <div class="container">
+         <h3>Mocha</h3>
+         <p>Chocolate con café espresso y leche al vapor, con crema batida.</p>
+         <a href="#">Leer más</a>
+        </div>
+    </div>
+    </div>
+ </section>
+
+<div class="Bar"></div>
+
+<article class="form__article" id="contacto">
+<form class="form">
+<h2>Contacto</h2>
+<p class="form__title">¡Dejanos tu mensaje y nos contactaremos con vos!</p>
+<div class="form__container">
+<div class="form__group">
+    <input type="text" id="name" class="form__input" placeholder=" ">
+    <label for="name" class="form__label">Nombre y apellido:</label>
+    <span class="form__line"></span>
+</div>
+<div class="form__group">
+    <input type="text" id="email" class="form__input" placeholder=" ">
+    <label for="email" class="form__label">Email:</label>
+    <span class="form__line"></span>
+</div>
+<div class="form__group">
+    <input type="text" id="message" class="form__input" placeholder=" ">
+    <label for="message" class="form__label">Te leemos:</label>
+    <span class="form__line"></span>
+</div>
+</div>
+<input type="submit" class="form__submit" value="Enviar">
+</form>
+</article>
+
+<footer>
+    <div class="container__footer">
+        <div class="box__footer">
+            <div class="logo">
+                <img src="/assets/imgs/cafecitologo.png" alt="">
+            </div>
+         <div class="terms">
+         </div>
+        </div>
+        <div class="box__footer">
+            <h2>Acerca de</h2>
+            <a href="#"><i class="fab fa-solid fa-book"></i>Nuestra historia</a>
+            <a href="#"><i class="fab fa-solid fa-bullhorn"></i>Comunicados oficiales</a>
+            <a href="#"><i class="fab fa-solid fa-mug-hot"></i>Blog cafecito</a>
+        </div>
+        <div class="box__footer">
+            <h2>Atencion al cliente</h2>
+            <a href="#"><i class="fab fa-solid fa-shop"></i>Sucursales</a>
+            <a href="#"><i class="fab fa-regular fa-credit-card"></i>Medios de pago</a>
+            <a href="#"><i class="fab a-solid fa-gavel"></i>Defenda de las y los consumidores</a>
+        </div>
+        <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href="#"><i class="fab fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-brands fa-facebook"></i>Facebook</a>
+            <a href="#"><i class="fab fa-brands fa-twitter"></i>Twitter</a>
+        </div>
+    </div>
+<div class="box__copyright">
+    <hr>
+    <p>Todos los derechos reservados © 2022. <b>www.cafecitoalpaso.com.ar</b></p>
+    <p>Web Developer: Erik Schrettel</p>
+</div>
+
+</footer>
 </body>
 </html>

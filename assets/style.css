@@ -243,10 +243,10 @@ transition: all 0.3s ease-in-out;
 .article__us {
     max-width: 1400px;
     margin: 0 auto;
-padding: 70px 0;
+padding: 20px 0;
 gap: 100px;
 width: 100%;
-height: 50vh;
+height: 60vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -290,6 +290,8 @@ color: var(--green)
     color: var(--brown)
 }
 
+/* Breakpoints/MediaQueries First*/
+
 @media (max-width:768px) {
 
     .article__content {
@@ -303,7 +305,6 @@ color: var(--green)
     }
     
     .article__img {
-        background-image: url(/assets/imgs/photo-1595441721716-67792383506e.jpg);
         height: 100%;
         width: 90%;        
         border-radius: 5px;
@@ -324,3 +325,330 @@ color: var(--green)
     align-items: center; 
 }
 
+/* Products section */
+
+.anuncio {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    background-color: var(--notanclaro);
+    padding: 10px;
+    color: var(--white);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.section__products {
+    background-color: var(--notanclaro);
+    margin: 0 auto;
+    max-width: 1400px;
+    padding-bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__products {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cards {
+ width: 100%;
+ margin: 10px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ border-radius: 6px;
+ overflow: hidden;
+ background: var(--white);
+ box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+ cursor: default;
+ transition: all 400ms ease;
+}
+
+.cards:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.cards h3 {
+ text-align: baseline;  
+}
+
+.cards .container {
+    padding: 15px;
+    text-align: center;
+}
+
+.cards .container p{
+    line-height: 1.5;
+}
+
+.cards .container h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.cards .container a{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    color: var(--green);
+    border:1px solid #758c3e;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.cards .container a:hover {
+    background-color: #c4d7a1;
+    color: var(--white)
+}
+
+/*Breakpoints/media queries products section*/
+
+@media (max-width:768px) {
+    .container__products {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }    
+}
+
+/*Formulario*/
+
+.form__article {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--white);
+    padding: 60px;
+}
+
+.form {
+    background-color: var(--clarito);
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba( 0 0 0 / 30%);
+    text-align: center;
+}
+
+.form h2 {
+    color: var(--green);
+}
+
+.form p{
+    color: var(--white)
+}
+
+.form__title {
+    font-size: 1rem;
+    margin-bottom: 3em;
+}
+
+.form__link {
+    font-weight: 400;
+    color: black;
+}
+
+.form__container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2em;
+}
+
+.form__group {
+    position: relative;
+}
+
+.form__input {
+    width: 100%;
+    background: none;
+    color: grey;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(94, 94, 94);
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+    transform: translateY(-12px) scale(.8);
+    transform-origin: left top;
+    color: var(--green);
+}
+
+.form__label {
+    color:rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position:absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5, color 3.s;
+}
+
+.form__submit {
+    background-color: var(--notanclaro);
+    color: var(--white);
+    font-size: 1rem;
+    margin: 50px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5em;
+}
+
+.form__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #c4d7a1;
+}
+
+@media (max-width:768px) {
+    .form__article {
+        max-width: 768px;
+        margin: 0 auto;
+        width: 100%;
+        background-color: var(--white);
+        padding: 20px;
+    }
+    .form {
+        background-color: var(--clarito);
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        max-width: 500px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px rgba( 0 0 0 / 30%);
+        text-align: center;
+    }
+
+
+}
+
+.Bar {
+    height: 5px;
+    max-width: 1400px;
+    width: 80%;
+}
+
+/*Footer definitivo*/
+
+footer {
+    max-width: 1400px;
+    width: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
+    background-image: url(/assets/imgs/svg.png);
+    background-size: cover;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin:  0 auto;
+    margin-top: 200px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+.box__footer .logo img {
+    width: 180px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 10px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 400;
+}
+
+.box__footer a  {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    padding: 3px;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.box__copyright {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+/* Breakpoints - MediaQueries Footer Section */
+@media (max-width:768px) {
+
+    .container__footer {
+        max-width: 768px;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin-top: 300px;
+        padding: 10px;
+    }
+    
+.box__footer {
+    padding: 0;
+}
+
+
+    .box__footer .logo img {
+        display:none;
+    }
+
+    .box__copyright {
+        
+    }
+}
